@@ -65,11 +65,14 @@ main {
 .logo {
   margin-right: 5%;
   margin-bottom: 1em;
+  display: block;
 }
 
 .menu {
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
+  margin: 1em 0;
+  display: inline-block;
   &:link, &:visited {
     background-color: #8bc53f;
     color: #fff;
@@ -142,9 +145,6 @@ img {
   .menu {
     display: none;
   }
-  .logo {
-    display: block;
-  }
   .site-header,
   .site-footer {
     float: left;
@@ -154,5 +154,22 @@ img {
   main {
     float: right;
     width: 60%;
+  }
+}
+
+.single {
+  @media (min-width: 60em) {
+    .site-header,
+    .site-footer {
+      float: none;
+      clear: none;
+      width: auto;
+    }
+    main {
+      float: none;
+      width: auto;
+      margin-right: 25%;
+      margin-left: 25%;
+    }
   }
 }

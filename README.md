@@ -16,3 +16,11 @@ In the `config.yml` file, you need to update:
 ### Navigation
 
 In `_includes/footer.html`, add links to any other pages inside the ordered list.
+
+
+### Layout in the YAML front-matter
+
+There are two layouts:
+
+* `default` for most things
+* `single` for single-page doc items that don't need a navigation block.
