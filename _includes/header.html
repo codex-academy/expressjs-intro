@@ -1,0 +1,10 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="{{ site.baseurl }}/" class="logo"><img src="img/codex-logo.png" alt="codeX"></a>
+    <a href="#menu" class="menu">Menu &darr;</a>
+
+    {% if (page.url != '/' && page.url != '') %}
+    <h2>{{ site.title }}</h2>
+    {% endif %}
+  </nav>
+</header>
