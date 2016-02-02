@@ -129,7 +129,7 @@ blockquote {
   border-radius: 0.25em;
 }
 
-code:not([class]) {
+code:not([class]), .highlighter-rouge {
   padding: 0.25em;
   background-color: #eee;
   border-radius: 0.25em;
