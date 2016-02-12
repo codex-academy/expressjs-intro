@@ -135,6 +135,11 @@ code:not([class]), .highlighter-rouge {
   border-radius: 0.25em;
 }
 
+td,
+th {
+  padding: 0;
+}
+
 img {
   margin: 0 auto;
   display: block;
