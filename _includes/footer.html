@@ -1,9 +1,14 @@
 <footer class="site-footer">
   <nav class="main-nav" id="menu">
     <ol>
-      <li{% if page.url == '/index-single.html' %} class="active"{% endif %}>
-        <a href="./index-single.html">Index single</a>
-      </li>
+      {% assign currentpage = page.url %}
+      {% for page in site.pages %}
+        {% unless page.url contains ".css" %}
+          <li>
+            <a href="{{ site.baseurl }}{{ page.url }}" {% if currentpage == page.url %}class = "active"{% endif %}>{{ page.title }}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
     </ol>
   </nav>
 </footer>
