@@ -93,6 +93,9 @@ main {
     margin: 0;
     list-style: none;
     padding: 0;
+    > ul a, ol a {
+      padding-left: 1.8em;
+    }
   }
   .active {
     background-color: #666;
