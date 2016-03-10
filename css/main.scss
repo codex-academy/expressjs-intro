@@ -142,6 +142,10 @@ code:not([class]), .highlighter-rouge {
   margin-bottom: 1em;
 }
 
+blockquote {
+  margin-bottom: 1em;
+}
+
 td,
 th {
   padding: 0.2em;
@@ -173,6 +177,9 @@ img {
 }
 
 .single {
+  body {
+    padding: 0;
+  }
   @media (min-width: 60em) {
     .site-header,
     .site-footer {
