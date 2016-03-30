@@ -1,14 +1,40 @@
 <footer class="site-footer">
   <nav class="main-nav" id="menu">
-    <ol>
-      {% assign currentpage = page.url %}
-      {% for page in site.pages %}
-        {% unless page.url contains ".css" %}
+    <ul>
           <li>
-            <a href="{{ site.baseurl }}{{ page.url }}" {% if currentpage == page.url %}class = "active"{% endif %}>{{ page.title }}</a>
+            <a href="{{ site.baseurl }}/steps/intro.html" {% if page.url == "/steps/intro.html" %}class = "active"{% endif %}>Introduction</a>
           </li>
-        {% endunless %}
-      {% endfor %}
-    </ol>
+          <li>
+            <a href="{{ site.baseurl }}/steps/restarts.html" {% if page.url == "/steps/restarts.html" %}class = "active"{% endif %}>Easy restarts</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/steps/static_files.html" {% if page.url == "/steps/static_files.html" %}class = "active"{% endif %}>Static files</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/steps/templating.html" {% if page.url == "/steps/templating.html" %}class = "active"{% endif %}>Templating</a>
+          </li>
+          <li>
+              <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/view_engine_setup.html" %}class = "active"{% endif %}>View engine</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/middleware.html" %}class = "active"{% endif %}>Middleware</a>
+            <ol>
+                <li>
+                    <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/middleware.html" %}class = "active"{% endif %}>Form data</a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/middleware.html" %}class = "active"{% endif %}>Http sessions</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/middleware.html" %}class = "active"{% endif %}>Flash messages</a>
+                </li>
+            </ol>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/steps/layout.html" {% if page.url == "/steps/layout.html" %}class = "active"{% endif %}>Page Layout & CSS</a>
+          </li>
+    </ul>
   </nav>
 </footer>
