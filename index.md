@@ -3,7 +3,7 @@ layout: default
 title: Index
 ---
 
-# Main heading
+# ExpressJS
 
 Express is a small unopinionated web server for NodeJS.
 
