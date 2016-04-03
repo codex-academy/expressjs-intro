@@ -3,11 +3,9 @@ layout: default
 ---
 # Static files
 
-So far we created some routes, but added no style as we haven't had any full web pages. We can change our web server configuration to allow it to display static files.
+One can configure ExpressJS to display content from static files. This is useful for client side scripts and css files.
 
-You should have a basic Express JS setup in place which can be used as a baseline to get some basic reports up and running.
-
-See more details about this at [Serving static files in Express](http://expressjs.com/starter/static-files.html).
+Read how to do that [here](http://expressjs.com/starter/static-files.html).
 
 Let's go ahead:
 

@@ -3,16 +3,18 @@ layout: default
 ---
 # Templates
 
-## Templating
+To combine data and html we use a template engine.
 
-We will be using `handlebars` as the template engine, it combines data with templates to render information.
+## Templating using Handlebars
+
+We will be using `handlebars` as our template engine, it combines data with templates to render information.
 
 A typical handlebars template look likes this
 
 ```handlebars
 <div class="entry">
   {{#if author}}
-    <h1>{{firstName}} {{lastName}}</h1>
+    <h1> {{firstName}} {{lastName}}</h1>
   {{/if}}
 </div>
 ```
@@ -29,11 +31,13 @@ var user = {
 
 results in a html enriched with some data.
 
-Handlebars JS is built on top of Mustache templating engine and extends it. Mustache templating aims to be logic-less templating, but that aim makes it hard to use at times.
+[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, but that make Mustache hard to use at times.
 
-See some more information on how the templates works on [the Mustache website](https://mustache.github.io/mustache.5.html).
+Read more on [the Mustache website](https://mustache.github.io/mustache.5.html).
 
-See some background information on the difference between Handlebars and Mustache: [What are the differences between Mustache.js and Handlebars.js?](http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js)
+Read here about [what are the differences between Mustache.js and Handlebars.js?](http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js)
+
+## Handlebars helpers
 
 Handlebars comes with a set of built in helpers that makes it easy for one to process data and convert it into a layout. It [supports things like if statements and loops](http://handlebarsjs.com/builtin_helpers.html).
 
@@ -49,13 +53,7 @@ It goes like this:
 template + data = web page
 ```
 
-So we somehow need to combine templates and data in Express JS. Luckily there is already a [Node module that is combining Express JS and Handlebars](https://www.npmjs.com/package/express-handlebars).
-
-Integrate handlebars templating into your spaza-app Express application.
-
-## Display data from Nelisa's CSV
-
-You should now know enough to display online reports for Nelisa.
+To combine templates and data in Express JS we configure Handlebars as a view engine in ExpressJS. Using this module : [Node module that is combining Express JS and Handlebars](https://www.npmjs.com/package/express-handlebars).
 
 ## Useful links:
 
