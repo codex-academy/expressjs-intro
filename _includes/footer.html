@@ -26,6 +26,15 @@
           </li>
           <li>
             <a href="{{ site.baseurl }}/steps/templating.html" {% if page.url == "/steps/templating.html" %}class = "active"{% endif %}>Templating</a>
+            <ol>
+                <li>
+                    <a href="{{ site.baseurl }}/steps/handlebars.html" {% if page.url == "/steps/handlebars.html" %}class = "active"{% endif %}>Stand-alone handlebars</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/steps/handlebars_with_express.html" {% if page.url == "/steps/handlebars_with_express.html" %}class = "active"{% endif %}>Handlebars as a view engine</a>
+                </li>
+            </ol>
+
           </li>
           <li>
             <a href="{{ site.baseurl }}/steps/middleware.html" {% if page.url == "/steps/middleware.html" %}class = "active"{% endif %}>Middleware</a>
