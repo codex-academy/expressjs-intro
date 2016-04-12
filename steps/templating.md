@@ -3,22 +3,23 @@ layout: default
 ---
 # Templates
 
-To combine data and html we use a template engine.
+To combine data and HTML we use a template engine.
 
 ## Templating using Handlebars example
 
-We will be using `handlebars` as our template engine, it combines data with templates to render information.
+We will be using `handlebars` as our template engine. It combines data with templates to render information.
 
-A typical handlebars template look likes this
+A typical handlebars template looks like this:
 
-{% highlight html %}
+```html
 {% raw %}
 <div class="entry">
   {{#if author}}
     <h1> {{firstName}} {{lastName}}</h1>
   {{/if}}
-</div>{% endraw %}
-{% endhighlight %}
+</div>
+{% endraw %}
+```
 
 combining the above template with this data:
 
@@ -32,18 +33,17 @@ var user = {
 
 results in this html:
 
-{% highlight html %}
+```html
 {% raw %}
 <div class="entry">
     <h1>Joe Bloggs</h1>
-</div>{% endraw %}
-{% endhighlight %}
+</div>
+{% endraw %}
+```
 
 ## Templating using Handlebars
 
-[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, but that make Mustache hard to use at times.
-
-Read more on [the Mustache website](https://mustache.github.io/mustache.5.html).
+[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of the [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, but that makes Mustache hard to use at times. Read more on [the Mustache website](https://mustache.github.io/mustache.5.html).
 
 Read here about [what are the differences between Mustache.js and Handlebars.js?](http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js)
 
@@ -69,7 +69,7 @@ var data_for_template = {};
 res.render('template_name', data_for_template);
 ```
 
-## Useful links:
+## Useful links
 
 * [Loading JSON files using require](https://nodejs.org/api/modules.html#modules_file_modules)
 * [Express JS](http://expressjs.com/)

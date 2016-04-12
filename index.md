@@ -7,10 +7,10 @@ title: Index
 
 Express is a small unopinionated web server for NodeJS.
 
-By default it can't do much, one needs to add middleware enable functionality.
+By default it can't do much: you need to add middleware to enable functionality.
 We will add:
 
- * Http Sessions;
+ * HTTP Sessions;
  * Form variables;
  * Flash messages to ExpressJS.
 

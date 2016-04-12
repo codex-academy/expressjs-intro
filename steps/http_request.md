@@ -14,7 +14,7 @@ There are 3 ways to input data from the request object:
 
 ### URL with parameters
 
-Read about routes with parameters [here](../steps/routes.html)
+Read about [routes with parameters](../steps/routes.html).
 
 ### Query paramaters
 
@@ -22,15 +22,15 @@ Query parameters can be sent into a route using a `?` after the route name.
 
 For example a URL like:
 
-`http://localhost:3000?name=Jo&last_name=Bloggs`
+```
+http://localhost:3000?name=Jo&last_name=Bloggs
+```
 
 have query parameters that can be read like this:
 
 ```javascript
-
     var name = req.query.name;
     var last_name = req.query.last_name;
-
 ```
 
 ### req.body

@@ -4,27 +4,27 @@ layout: default
 
 # Middleware
 
-One extends ExpressJS functionality using middleware.
+You can extend ExpressJS functionality using middleware.
 
 We will look at middleware to:
 
-    * process form variables;
-    * to handle http sessions;
-    * to display flash messages.
+* process form variables;
+* to handle HTTP sessions;
+* to display flash messages.
 
 ## Form Variables
 
-To process variables sent from Http form posts add the [body-parser](https://www.npmjs.com/package/body-parser) middleware to ExpressJS.
+To process variables sent from HTTP form posts add the [body-parser](https://www.npmjs.com/package/body-parser) middleware to ExpressJS.
 
 This will enable the `req.body` variable in ExpressJS route handlers.
 
-## Http Sessions
+## HTTP Sessions
 
-Storing state between Http calls.
+Storing state between HTTP calls.
 
-Http is a stateless protocol, Http Sessions allow one to store variables between http calls.
+HTTP is a stateless protocol, HTTP Sessions allow one to store variables between HTTP calls.
 
-To enable Http Sessions in ExpressJS one need to add the [express-session](https://www.npmjs.com/package/express-session) middleware to ExpressJS.
+To enable HTTP Sessions in ExpressJS one need to add the [express-session](https://www.npmjs.com/package/express-session) middleware to ExpressJS.
 
 This will enable the `req.session` variable in ExpressJS route handlers.
 
@@ -43,11 +43,12 @@ app.get('/the-route', function (req, res) {
 });
 ```
 
-This will add a variable on can use in handlebars templates like this:
+This will add a variable you can use in handlebars templates like this:
 
-{% highlight html %}
+```html
 {% raw %}
 <div class="entry">
-    <h1> {{messages.info}}</h1>
-</div>{% endraw %}
-{% endhighlight %}
+    <h1>{{messages.info}}</h1>
+</div>
+{% endraw %}
+```
