@@ -4,13 +4,12 @@ layout: default
 
 ## Server side variables
 
-Express route callbacks always take two parameters req and res.
+Express route callbacks take at least two parameters `req` and `res`.
 
-Those two variables are HttpRequest (req) and HttpResponse (res) respectively:
+They are HttpRequest (`req`) and HttpResponse (`res`):
 
-
-[Http Response](/steps/http_response.html)
-[Http Request](/steps/http_request.html)
+* [Http Response](/steps/http_response.html)
+* [Http Request](/steps/http_request.html)
 
 ## HTML forms parameters
 
