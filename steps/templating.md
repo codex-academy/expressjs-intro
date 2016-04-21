@@ -3,19 +3,19 @@ layout: default
 ---
 # Templates
 
-To combine data and html we use a template engine.
+To create views in Express you one can use various different template engines; this makes it easy to combine data into HTML files. We will use Handlebars as our template engine.
 
 ## Templating using Handlebars example
 
 We will be using `handlebars` as our template engine, it combines data with templates to render information.
 
-A typical handlebars template look likes this
+A typical handlebars template looks like this
 
 {% highlight html %}
 {% raw %}
 <div class="entry">
   {{#if author}}
-    <h1> {{firstName}} {{lastName}}</h1>
+    <h1>{{firstName}} {{lastName}}</h1>
   {{/if}}
 </div>{% endraw %}
 {% endhighlight %}
@@ -41,7 +41,7 @@ results in this html:
 
 ## Templating using Handlebars
 
-[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, but that make Mustache hard to use at times.
+[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, that make Mustache hard to use at times.
 
 Read more on [the Mustache website](https://mustache.github.io/mustache.5.html).
 
@@ -49,11 +49,11 @@ Read here about [what are the differences between Mustache.js and Handlebars.js?
 
 ## Handlebars helpers
 
-Handlebars comes with a set of built in helpers that makes it easy for one to process data and convert it into a layout. It [supports things like if statements and loops](http://handlebarsjs.com/builtin_helpers.html).
+Handlebars comes with a set of built in helpers that make it easy for you to process data and convert it into a layout. It [supports things like if statements and loops](http://handlebarsjs.com/builtin_helpers.html).
 
 ## View Engine
 
-To make it easy to use Handlebars templates in ExpressJS we configure Handlebars as a view engine in ExpressJS. Using the [express-handlebars](https://www.npmjs.com/package/express-handlebars) module.
+To make it easy to use Handlebars templates in ExpressJS we configure Handlebars as a view engine in ExpressJS, using the [express-handlebars](https://www.npmjs.com/package/express-handlebars) module.
 
 Configure it like this :
 
