@@ -41,7 +41,7 @@ results in this html:
 
 ## Templating using Handlebars
 
-[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, tthat make Mustache hard to use at times.
+[HandlebarsJS](https://www.npmjs.com/package/handlebars) is built on top of [Mustache](https://www.npmjs.com/package/mustache) templating engine and extends it. Mustache templating aims to be logic-less templating, that make Mustache hard to use at times.
 
 Read more on [the Mustache website](https://mustache.github.io/mustache.5.html).
 
