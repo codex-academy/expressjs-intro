@@ -3,7 +3,7 @@ layout: default
 ---
 # Templates
 
-To combine data and html we use a template engine.
+To create views in Express you one can use various different template engines; this makes it easy to combine data into HTML files. We will use Handlebars as our template engine.
 
 ## Templating using Handlebars example
 
