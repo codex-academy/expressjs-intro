@@ -35,7 +35,20 @@ have query parameters that can be read like this:
 
 ### req.body
 
-To read parameters send from HTML forms one use the `req.body` paramater on the Http Request object sent into routes.
+### req.body
+
+To read parameters sent from HTML forms to the server you use the `body` attribute on the HttpRequest object sent into routes.
+
+For a html form that looks like this in html:
+
+```html
+<form action="/add_product" method="POST">
+    Product name : <input type="text" name="product_name" >
+    <input type="submit">
+</form>
+```
+
+The `product_name` form parameter will be available on the server side in the `req.body` attribute in a route setup like this:
 
 ```javascript
 app.post('/add_product', function(req, res){
@@ -44,3 +57,4 @@ app.post('/add_product', function(req, res){
  res.render('product', {product_name :  formData.product_name});
 });
 ```
+
