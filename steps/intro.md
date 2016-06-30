@@ -1,5 +1,6 @@
 ---
 layout: default
+unitstandard: 115362-SO1-AC1
 ---
 
 # Intro
@@ -46,8 +47,11 @@ Now run your own ExpressJS server locally.
 
 * Create a new folder in your projects folder called `express-app`.
 * Change into this folder using `cd express-app`.
-* Type `npm init`. Accept all the defaults. This creates a `package.json` file.
-* Install ExpressJS and save it as a dependency in your `package.json` by running `npm install --save express`. The `--save` parameter makes npm add a line to your `package.json` file.
+* Type `npm init`. This will create a `package.json` file in the current directory, based on your answers to some questions.
+  * `entry point` means the main file for your application. We're going to use `server.js`, so enter that.
+  * `test command` for us is `mocha`. We'll use this feature of the `package.json` later, for automatic testing of our code.
+  * `git repository` is the location of your repository, like `https://github.com/<username>/<repository>.git`. Since we're using GitHub to store our code, `npm` lets us use a shortcut like this: `<username>/<repository>`.
+* Install ExpressJS and save it as a dependency in your `package.json` by running `npm install --save express`. The additional `--save` parameter makes `npm` add a line to your `package.json` file.
 
 Read more details about [installing ExpressJS](http://expressjs.com/starter/installing.html) here.
 
