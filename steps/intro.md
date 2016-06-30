@@ -38,18 +38,18 @@ app.get('/hello', function(){
 }};
 ```
 
-Our server instance now have a `/hello` Http GET route.
+Our server instance now has a `/hello` HTTP GET route.
 
 ### Install Express JS
 
 Now run your own ExpressJS server locally.
 
-* Create a new folder in your projects folder called `express-app`;
-* change into this folder using `cd express-app`;
-* type `npm init` accept all the defaults - this create a `package.json` file;
-* install ExpressJS and save it as a dependency the package.json automatically by running `npm install --save express` . The `--save` parameter ensure the the dependency that is installed are stored in the `package.json` file.
+* Create a new folder in your projects folder called `express-app`.
+* Change into this folder using `cd express-app`.
+* Type `npm init`. Accept all the defaults. This creates a `package.json` file.
+* Install ExpressJS and save it as a dependency in your `package.json` by running `npm install --save express`. The `--save` parameter makes npm add a line to your `package.json` file.
 
- Read more details about [installing ExpressJS](http://expressjs.com/starter/installing.html) here.
+Read more details about [installing ExpressJS](http://expressjs.com/starter/installing.html) here.
 
 ### Basic Express server instance
 
