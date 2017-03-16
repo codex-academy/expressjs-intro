@@ -6,7 +6,7 @@ layout: default
 
 ## Get going with Express JS
 
-ExpressJS is a web server for NodeJS.
+[ExpressJS](expressjs.com) is a web server for NodeJS.
 
 ### Port numbers
 
@@ -26,34 +26,28 @@ This server instance is not useful, as it expose no routes.
 
 ### Routes
 
-Routes can be accessed using the Http protocol. ExpressJS support all the Http request verbs. We will focus on POST and GET requests.
+Routes can be accessed using the HTTP protocol. ExpressJS support all the HTTP request verbs. We will focus on POST and GET requests.
 
-To add a route to our server instance.
-
-Add some code before the `app.listen` method call.
+To add a `hello` route to the server add the code below before the `app.listen` method call.
 
 ```javascript
-app.get('/hello', function(){
-    req.send("Hello world!")
+app.get('/hello', function(req, res){
+    res.send("Hello world!")
 }};
 ```
 
-Our server instance now have a `/hello` Http GET route.
+The server should now have a `/hello` GET route.
 
-### Install Express JS
+### Setup and run a ExpressJS server instance
 
-Now run your own ExpressJS server locally.
+Follow these steps to setup a ExpressJS server instance.
 
 * Create a new folder in your projects folder called `express-app`;
 * change into this folder using `cd express-app`;
-* type `npm init` accept all the defaults - this create a `package.json` file;
-* install ExpressJS and save it as a dependency the package.json automatically by running `npm install --save express` . The `--save` parameter ensure the the dependency that is installed are stored in the `package.json` file.
+* type `npm init -y` this create a `package.json` file using defaults;
+* install ExpressJS and save it as a dependency in the package.json automatically by running `npm install --save express` . The `--save` parameter ensure that dependency that is installed is stored in the `package.json` file.
 
- Read more details about [installing ExpressJS](http://expressjs.com/starter/installing.html) here.
-
-### Basic Express server instance
-
-Create a file called `server.js` and copy the text below into it:
+Now create a file called `server.js` and copy the code below into it:
 
 ```javascript
 var express = require('express');
