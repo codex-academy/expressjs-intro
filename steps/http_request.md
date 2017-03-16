@@ -37,11 +37,11 @@ have query parameters that can be read like this:
 
 To read parameters sent from HTML forms to the server you use the `body` attribute on the HttpRequest object sent into routes.
 
-For a html form that looks like this in html:
+The HTML form might look like this:
 
 ```html
 <form action="/add_product" method="POST">
-    Product name : <input type="text" name="product_name" >
+    <label>Product name: <input type="text" name="product_name" ></label>
     <input type="submit">
 </form>
 ```
@@ -55,3 +55,4 @@ app.post('/add_product', function(req, res){
  res.render('product', {product_name :  formData.product_name});
 });
 ```
+
