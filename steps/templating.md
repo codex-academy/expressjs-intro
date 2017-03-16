@@ -3,9 +3,13 @@ layout: default
 ---
 # Templates
 
+
 To create views in Express you one can use various different template engines; this makes it easy to combine data into HTML files. We will use Handlebars as our template engine.
 
-## Templating using Handlebars example
+## Handlebars
+
+* [Stand-alone Handlebars](/steps/handlebars.html)
+* [Handlebars as a view engine](/steps/handlebars_with_express.html)
 
 We will be using `handlebars` as our template engine, it combines data with templates to render information.
 

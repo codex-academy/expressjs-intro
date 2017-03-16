@@ -35,8 +35,6 @@ have query parameters that can be read like this:
 
 ### req.body
 
-### req.body
-
 To read parameters sent from HTML forms to the server you use the `body` attribute on the HttpRequest object sent into routes.
 
 The HTML form might look like this:
