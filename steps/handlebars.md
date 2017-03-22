@@ -20,7 +20,7 @@ A typical handlebars template look likes this
 </div>{% endraw %}
 {% endhighlight %}
 
-combining the above template with this data:
+You can combe the above template with this data:
 
 ```javascript
 var user = {
@@ -28,6 +28,18 @@ var user = {
  firstName : "Jo",
  lastName : "Blogss"
 };
+```
+
+like this:
+
+```javascript
+
+var templateString = document.querySelector('.entry').innerHTML;
+
+var templateInstance = Handlebars.compile(templateString);
+
+var html = templateInstance(user);
+
 ```
 
 results in this html:
@@ -38,6 +50,11 @@ results in this html:
     <h1>Joe Bloggs</h1>
 </div>{% endraw %}
 {% endhighlight %}
+
+> Note that you need to reference the Handlebars library. You can use a link to cdnjs.org like this
+{% highlight html %}{% raw %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+{% endraw %}{% endhighlight %}
 
 ## Templating using Handlebars
 
