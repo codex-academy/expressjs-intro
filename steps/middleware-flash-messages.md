@@ -4,7 +4,7 @@ layout: default
 
 # Flash messages
 
-An easy way to display messages after a redirect is to add the [express-flash](https://www.npmjs.com/package/express-flash) middleware.
+An easy way to display messages after a redirect is to add the [express-flash](https://github.com/avermeulen/express-flash) middleware.
 
 This will enable the `req.flash` variable in ExpressJS route handlers.
 
